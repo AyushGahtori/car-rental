@@ -16,7 +16,100 @@ body {
 }
 
 .container {
-  max-width: 107rem;
+  max-width: 114rem;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 0 2.5rem;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.7rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 99999;
+}
+.navbar__img {
+  width: 14.5rem;
+}
+.navbar__img img {
+  width: 100%;
+  height: auto;
+}
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 2.1rem;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #010103;
+}
+.navbar__links li {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar__links li:hover {
+  color: #ff4d30;
+}
+.navbar__buttons {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  align-items: center;
+}
+.navbar__buttons__sign-in {
+  color: #010103;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar__buttons__sign-in:hover {
+  color: #ff4d30;
+}
+.navbar__buttons__register {
+  background-color: #ff4d30;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: all 0.3s;
+}
+.navbar__buttons__register:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+  background-color: #fa4226;
+}
+.navbar__buttons a {
+  text-decoration: none;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-content__text {
+  font-size: 3rem;
+  z-index: 2;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,34 @@
+import { Link } from "react-router-dom";
+import Logo from "../images/logo/logo.png";
+
+function Navbar() {
+  return (
+    <>
+      <nav>
+        <div className="navbar">
+          <div className="navbar__img">
+            <img src={Logo} alt="logo-img" />
+          </div>
+          <ul className="navbar__links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Vehicle Models</li>
+            <li>Testimonials</li>
+            <li>Out Team</li>
+            <li>Contact</li>
+          </ul>
+          <div className="navbar__buttons">
+            <Link className="navbar__buttons__sign-in" to="/">
+              Sign In
+            </Link>
+            <Link className="navbar__buttons__register" to="/">
+              Register
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
+}
+
+export default Navbar;
