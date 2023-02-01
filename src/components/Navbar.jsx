@@ -7,7 +7,9 @@ function Navbar() {
       <nav>
         <div className="navbar">
           <div className="navbar__img">
-            <img src={Logo} alt="logo-img" />
+            <Link to="/" onClick={() => window.top(0, 0)}>
+              <img src={Logo} alt="logo-img" />
+            </Link>
           </div>
           <ul className="navbar__links">
             <li>Home</li>

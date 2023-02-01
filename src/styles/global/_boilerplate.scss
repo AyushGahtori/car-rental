@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 133rem;
-  margin: 0 auto;
-  padding: 0 2.5rem;
+  max-width: 133rem !important;
+  margin: 0 auto !important;
+  padding: 0 2.5rem !important;
 }
