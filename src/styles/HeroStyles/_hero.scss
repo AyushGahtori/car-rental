@@ -19,9 +19,89 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
 
   &__text {
-    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    max-width: 50rem;
+    margin-top: 5rem;
+
+    h4 {
+      font-size: $h4-size;
+      font-family: $text-font;
+      color: $text-black;
+    }
+
+    h1 {
+      font-size: $h1-size;
+      font-family: $titles-font;
+      font-weight: 700;
+      color: $text-black;
+      line-height: 1.2;
+      margin-top: 1rem;
+      margin-bottom: 2.3rem;
+
+      span {
+        color: $text-orange;
+      }
+    }
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      line-height: 1.6;
+      color: $text-gray;
+      margin-bottom: 4rem;
+    }
+
+    &__btns {
+      display: flex;
+      gap: 2rem;
+      font-size: $p-size;
+      font-family: $text-font;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+      }
+
+      &__book-ride {
+        background-color: $text-orange;
+        padding: 1.8rem 3rem;
+        border-radius: 0.3rem;
+        box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+        transition: all 0.3s;
+        border: 2px solid $text-orange;
+
+        &:hover {
+          box-shadow: 0 10px 15px 0 rgb(255 83 48 / 60%);
+          background-color: #fa4226;
+        }
+      }
+
+      &__learn-more {
+        background-color: $text-black;
+        padding: 1.8rem 3rem;
+        border-radius: 0.3rem;
+        border: 2px solid $text-black;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: transparent;
+          color: $text-black;
+        }
+      }
+    }
+  }
+
+  &__car-img {
     z-index: 2;
+    position: absolute;
+    right: 0;
+    width: 65%;
+    margin-top: 5rem;
   }
 }
