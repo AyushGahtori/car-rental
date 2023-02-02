@@ -12,6 +12,10 @@
   top: 0;
   right: 0;
   z-index: 1;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 .hero-content {
@@ -21,12 +25,21 @@
   align-items: center;
   position: relative;
 
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
     z-index: 3;
     max-width: 50rem;
     margin-top: 5rem;
+
+    @media (max-width: 800px) {
+      text-align: center;
+      align-items: center;
+    }
 
     h4 {
       font-size: $h4-size;
@@ -62,6 +75,10 @@
       font-size: $p-size;
       font-family: $text-font;
 
+      @media (max-width: 450px) {
+        flex-direction: column;
+      }
+
       a {
         text-decoration: none;
         color: white;
@@ -75,6 +92,10 @@
         box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
         transition: all 0.3s;
         border: 2px solid $text-orange;
+
+        @media (max-width: 450px) {
+          padding: 1.8rem 8rem;
+        }
 
         &:hover {
           box-shadow: 0 10px 15px 0 rgb(255 83 48 / 60%);
@@ -103,5 +124,9 @@
     right: 0;
     width: 65%;
     margin-top: 5rem;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }

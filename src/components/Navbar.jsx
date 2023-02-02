@@ -27,6 +27,11 @@ function Navbar() {
               Register
             </Link>
           </div>
+
+          {/* mobile */}
+          <div className="mobile-hamb">
+            <i className="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
     </>
