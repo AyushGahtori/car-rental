@@ -21,6 +21,44 @@ body {
   padding: 0 2.5rem !important;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff4d30 #ffffff;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #ff4d30;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4d30;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ff2525;
+}
+
 .navbar {
   max-width: 133rem;
   width: 100%;
@@ -94,7 +132,7 @@ body {
 
 .hero-section {
   width: 100%;
-  height: 110vh;
+  height: 97vh;
   background-color: #f8f8f8;
   position: relative;
 }
@@ -187,8 +225,8 @@ body {
 }
 
 .book-section {
-  background-color: #ffffff;
   position: relative;
+  background: linear-gradient(to bottom, #f8f8f8 20%, #ffffff 80%);
 }
 
 .book-content {
@@ -300,4 +338,71 @@ body {
 }
 .book-content__box button:hover {
   box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
+}
+
+.plan-section {
+  background-color: #ffffff;
+  padding: 5.3rem 0;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: column;
+}
+.plan-container__title {
+  margin: 0 auto;
+  text-align: center;
+  color: #010103;
+}
+.plan-container__title h3 {
+  font-size: 2.4rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+.plan-container__title h2 {
+  font-size: 4.2rem;
+  font-family: "Poppins", sans-serif;
+  margin: 1.3rem 0 3rem 0;
+}
+.plan-container__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 3.7rem;
+  padding: 0 3rem;
+}
+@media (max-width: 1021px) {
+  .plan-container__boxes {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .plan-container__boxes {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+}
+.plan-container__boxes__box {
+  text-align: center;
+  padding: 1rem 6rem;
+}
+@media (max-width: 500px) {
+  .plan-container__boxes__box {
+    padding: 1rem 1rem;
+  }
+}
+.plan-container__boxes__box img {
+  width: 17rem;
+  height: auto;
+}
+.plan-container__boxes__box h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.plan-container__boxes__box p {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  color: #706f7b;
+  line-height: 1.43;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import BookCar from "./BookCar";
+import PlanTrip from "./PlanTrip";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Navbar />
       <Hero />
       <BookCar />
+      <PlanTrip />
     </>
   );
 }

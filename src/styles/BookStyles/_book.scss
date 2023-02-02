@@ -1,8 +1,9 @@
 @use "../global" as *;
 
 .book-section {
-  background-color: $bg-white;
   position: relative;
+
+  background: linear-gradient(to bottom, $bg-gray 20%, $bg-white 80%);
 }
 
 .book-content {
