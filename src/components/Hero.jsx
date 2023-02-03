@@ -5,7 +5,7 @@ import HeroCar from "../images/hero/main-car.png";
 function Hero() {
   return (
     <>
-      <section className="hero-section">
+      <section id="home" className="hero-section">
         <div className="container">
           <img className="bg-shape" src={BgShape} alt="bg-shape" />
           <div className="hero-content">
