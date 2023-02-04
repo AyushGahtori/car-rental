@@ -667,4 +667,86 @@ body {
     justify-content: center;
     gap: 5rem;
   }
+}
+
+.active {
+  background-color: blue;
+}
+
+.non-active {
+  background-color: red;
+}
+
+.banner-section {
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  position: relative;
+  background-color: #2d2d2d;
+  margin: 8rem 0;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.244);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.img-side {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-position: top right;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/src/images/banners/bg-1.png");
+}
+.img-side img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-side {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: white;
+  z-index: 5;
+  position: absolute;
+  top: 22%;
+  max-width: 65rem;
+  line-height: 1.3;
+  justify-content: space-between;
+}
+.text-side h2 {
+  font-size: 5.2rem;
+  margin-bottom: 2rem;
+}
+.text-side p {
+  font-size: 2.4rem;
+}
+
+.btn {
+  position: absolute;
+  right: 9%;
+  z-index: 7;
+  top: 42%;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background-color: #ff4d30;
+  padding: 1.8rem 3rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: all 0.3s;
+  border: 2px solid #ff4d30;
+}
+.btn:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.5);
+  background-color: #fa4226;
 }/*# sourceMappingURL=styles.css.map */

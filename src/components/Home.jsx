@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import BookCar from "./BookCar";
 import PlanTrip from "./PlanTrip";
 import PickCar from "./PickCar";
+import Banner from "./Banner";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <BookCar />
       <PlanTrip />
       <PickCar />
+      <Banner />
     </>
   );
 }
