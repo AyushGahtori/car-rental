@@ -6,6 +6,7 @@ import PickCar from "./PickCar";
 import Banner from "./Banner";
 import ChooseUs from "./ChooseUs";
 import Testimonials from "./Testimonials";
+import Faq from "./Faq";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <Banner />
       <ChooseUs />
       <Testimonials />
+      <Faq />
     </>
   );
 }
