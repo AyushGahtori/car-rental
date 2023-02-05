@@ -5,6 +5,7 @@ import PlanTrip from "./PlanTrip";
 import PickCar from "./PickCar";
 import Banner from "./Banner";
 import ChooseUs from "./ChooseUs";
+import Testimonials from "./Testimonials";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <PickCar />
       <Banner />
       <ChooseUs />
+      <Testimonials />
     </>
   );
 }
