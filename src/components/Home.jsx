@@ -4,6 +4,7 @@ import BookCar from "./BookCar";
 import PlanTrip from "./PlanTrip";
 import PickCar from "./PickCar";
 import Banner from "./Banner";
+import ChooseUs from "./ChooseUs";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <PlanTrip />
       <PickCar />
       <Banner />
+      <ChooseUs />
     </>
   );
 }

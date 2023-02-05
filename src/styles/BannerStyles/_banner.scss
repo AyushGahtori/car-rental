@@ -2,78 +2,42 @@
 
 .banner-section {
   width: 100%;
-  height: 35rem;
+  height: auto;
   display: flex;
-  position: relative;
   background-color: #2d2d2d;
   margin: 8rem 0;
+  padding: 6rem 0;
+  text-align: center;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.244);
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-}
-
-.img-side {
-  width: 65%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  background-position: top right;
-  opacity: 0.5;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/src/images/banners/bg-1.png");
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.text-side {
+.banner-content {
+  color: white;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
-  text-align: left;
-  color: white;
-  z-index: 5;
-  position: absolute;
-  top: 22%;
-  max-width: 65rem;
-  line-height: 1.3;
-  justify-content: space-between;
+  align-items: center;
 
-  h2 {
-    font-size: $h1-size;
-    margin-bottom: 2rem;
-  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
-  p {
-    font-size: $h3-size;
-  }
-}
+    h2 {
+      font-size: $h1-size;
+      line-height: 1.3;
 
-.btn {
-  position: absolute;
-  right: 9%;
-  z-index: 7;
-  top: 42%;
-  font-size: 1.7rem;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  background-color: #ff4d30;
-  padding: 1.8rem 3rem;
-  border-radius: 0.3rem;
-  box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
-  transition: all 0.3s;
-  border: 2px solid #ff4d30;
+      @media (max-width: 550px) {
+        font-size: $h2-size;
+      }
+    }
 
-  &:hover {
-    box-shadow: 0 10px 15px 0 rgb(255 83 48 / 50%);
-    background-color: #fa4226;
+    p {
+      font-size: $h3-size;
+
+      @media (max-width: 550px) {
+        font-size: 2rem;
+      }
+    }
   }
 }
