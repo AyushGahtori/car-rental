@@ -2,10 +2,9 @@
 
 .choose-section {
   background-color: white;
-  padding: 2rem 0;
+  padding: 2rem 0 10rem 0;
   background-image: url("/src/images/chooseUs/bg.png");
-  background-position: center;
-  //   background-position: -200px 335px;
+  background-position: -225px 255px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -18,14 +17,25 @@
     width: 90%;
     height: auto;
     margin: 0 auto;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
   }
 }
 
 .text-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 3rem;
   width: 100%;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5.5rem;
+  }
 
   &__left {
     text-align: left;
@@ -33,6 +43,11 @@
     flex-direction: column;
     max-width: 50rem;
     color: $text-black;
+
+    @media (max-width: 1000px) {
+      align-items: center;
+      text-align: center;
+    }
 
     h4 {
       font-size: $h4-size;
@@ -78,6 +93,40 @@
   &__right {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4.5rem;
+    max-width: 44rem;
+
+    &__box {
+      display: flex;
+
+      @media (max-width: 550px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        width: 11rem;
+        height: 11rem;
+        margin-right: 1.1rem;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+
+        h4 {
+          font-size: $h3-size;
+        }
+
+        p {
+          font-size: $p-size;
+          color: $text-gray;
+          font-family: $text-font;
+          line-height: 1.3;
+        }
+      }
+    }
   }
 }

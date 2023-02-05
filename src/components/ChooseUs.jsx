@@ -1,4 +1,7 @@
 import MainImg from "../images/chooseUs/main.png";
+import Box1 from "../images/chooseUs/icon1.png";
+import Box2 from "../images/chooseUs/icon2.png";
+import Box3 from "../images/chooseUs/icon3.png";
 
 function ChooseUs() {
   return (
@@ -26,9 +29,38 @@ function ChooseUs() {
                 </a>
               </div>
               <div className="text-container__right">
-                <div className="text-container__right__box">1</div>
-                <div className="text-container__right__box">2</div>
-                <div className="text-container__right__box">3</div>
+                <div className="text-container__right__box">
+                  <img src={Box1} alt="car-img" />
+                  <div className="text-container__right__box__text">
+                    <h4>Cross Country Drive</h4>
+                    <p>
+                      Speedily say has suitable disposal add boy. On forth doubt
+                      miles of child. Exercise joy man children rejoiced.
+                    </p>
+                  </div>
+                </div>
+                <div className="text-container__right__box">
+                  {" "}
+                  <img src={Box2} alt="coin-img" />
+                  <div className="text-container__right__box__text">
+                    <h4>All Inclusive Pricing</h4>
+                    <p>
+                      Speedily say has suitable disposal add boy. On forth doubt
+                      miles of child. Exercise joy man children rejoiced.
+                    </p>
+                  </div>
+                </div>
+                <div className="text-container__right__box">
+                  {" "}
+                  <img src={Box3} alt="coin-img" />
+                  <div className="text-container__right__box__text">
+                    <h4>No Hidden Charges</h4>
+                    <p>
+                      Speedily say has suitable disposal add boy. On forth doubt
+                      miles of child. Exercise joy man children rejoiced.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
