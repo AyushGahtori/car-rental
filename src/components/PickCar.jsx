@@ -4,6 +4,15 @@ import { CAR_DATA } from "./CarData";
 
 function PickCar() {
   const [active, setActive] = useState("SecondCar");
+  const [colorBtn, setColorBtn] = useState("btn1");
+
+  const btnID = (id) => {
+    setColorBtn(colorBtn === id ? "" : id);
+  };
+
+  const coloringButton = (id) => {
+    return colorBtn === id ? "colored-button" : "";
+  };
 
   return (
     <>
@@ -14,27 +23,70 @@ function PickCar() {
               <h3>Vehicle Models</h3>
               <h2>Our rental fleet</h2>
               <p>
-                To contribute to positive change and achieve our sustainability
-                goals with many extraordinary
+                Choose from a variety of our amazing vehicles to rent for your
+                next adventure or business trip
               </p>
             </div>
             <div className="pick-container__car-content">
               {/* pick car */}
               <div className="pick-box">
-                <button onClick={() => setActive("SecondCar")}>
+                <button
+                  className={`${coloringButton("btn1")}`}
+                  onClick={() => {
+                    setActive("SecondCar");
+                    btnID("btn1");
+                  }}
+                >
                   Audi A1 S-Line
                 </button>
-                <button onClick={() => setActive("FirstCar")}>VW Golf 6</button>
-                <button onClick={() => setActive("ThirdCar")}>
+                <button
+                  className={`${coloringButton("btn2")}`}
+                  id="btn2"
+                  onClick={() => {
+                    setActive("FirstCar");
+                    btnID("btn2");
+                  }}
+                >
+                  VW Golf 6
+                </button>
+                <button
+                  className={`${coloringButton("btn3")}`}
+                  id="btn3"
+                  onClick={() => {
+                    setActive("ThirdCar");
+                    btnID("btn3");
+                  }}
+                >
                   Toyota Camry
                 </button>
-                <button onClick={() => setActive("FourthCar")}>
+                <button
+                  className={`${coloringButton("btn4")}`}
+                  id="btn4"
+                  onClick={() => {
+                    setActive("FourthCar");
+                    btnID("btn4");
+                  }}
+                >
                   BMW 320 MedernLine
                 </button>
-                <button onClick={() => setActive("FifthCar")}>
+                <button
+                  className={`${coloringButton("btn5")}`}
+                  id="btn5"
+                  onClick={() => {
+                    setActive("FifthCar");
+                    btnID("btn5");
+                  }}
+                >
                   Mercedes-Benz GLK
                 </button>
-                <button onClick={() => setActive("SixthCar")}>
+                <button
+                  className={`${coloringButton("btn6")}`}
+                  id="btn6"
+                  onClick={() => {
+                    setActive("SixthCar");
+                    btnID("btn6");
+                  }}
+                >
                   VW Passat CC
                 </button>
               </div>

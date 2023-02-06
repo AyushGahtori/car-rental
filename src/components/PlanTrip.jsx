@@ -18,8 +18,8 @@ function PlanTrip() {
                 <img src={SelectCar} alt="icon_img" />
                 <h3>Select Car</h3>
                 <p>
-                  To contribute to positive change and achieve our
-                  sustainability goals with many extraordinary
+                  We offers a big range of vehicles for all your driving needs.
+                  We have the perfect car to meet your needs
                 </p>
               </div>
 
@@ -27,8 +27,8 @@ function PlanTrip() {
                 <img src={Contact} alt="icon_img" />
                 <h3>Contact Operator</h3>
                 <p>
-                  To contribute to positive change and achieve our
-                  sustainability goals with many extraordinary
+                  Our knowledgeable and friendly operators are always ready to
+                  help with any questions or concerns
                 </p>
               </div>
 
@@ -36,8 +36,8 @@ function PlanTrip() {
                 <img src={Drive} alt="icon_img" />
                 <h3>Let's Drive</h3>
                 <p>
-                  To contribute to positive change and achieve our
-                  sustainability goals with many extraordinary
+                  Whether you're hitting the open road, we've got you covered
+                  with our wide range of cars
                 </p>
               </div>
             </div>

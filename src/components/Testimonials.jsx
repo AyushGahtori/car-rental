@@ -1,4 +1,5 @@
-import Img1 from "../images/testimonials/user.png";
+import Img2 from "../images/testimonials/pfp1.jpg";
+import Img3 from "../images/testimonials/pfp2.jpg";
 
 function Testimonials() {
   return (
@@ -10,9 +11,10 @@ function Testimonials() {
               <h4>Reviewed by People</h4>
               <h2>Client's Testimonials</h2>
               <p>
-                Certain but she but shyness why cottage. Guy the put instrument
-                sir entreaties affronting. Pretended exquisite see cordially the
-                you. Weeks quiet do vexed.
+                Discover the positive impact we've made on the our clients by
+                reading through their testimonials. Our clients have experienced
+                our service and results, and they're eager to share their
+                positive experiences with you.
               </p>
             </div>
 
@@ -22,14 +24,15 @@ function Testimonials() {
                   <i className="fa-solid fa-quote-right"></i>
                 </span>
                 <p>
-                  "The rem value is the same as the em value displayed above.
-                  Both units are scalable."
+                  "We rented a car from this website and had an amazing
+                  experience! The booking was easy and the rental rates were
+                  very affordable. "
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">
-                    <img src={Img1} alt="user_img" />
+                    <img src={Img2} alt="user_img" />
                     <span>
-                      <h4>Kimberly Garcia</h4>
+                      <h4>Parry Hotter</h4>
                       <p>Belgrade</p>
                     </span>
                   </div>
@@ -41,14 +44,14 @@ function Testimonials() {
                   <i className="fa-solid fa-quote-right"></i>
                 </span>
                 <p>
-                  "The rem value is the same as the em value displayed above.
-                  Both units are scalable."
+                  "The car was in great condition and made our trip even better.
+                  Highly recommend for this car rental website!"
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">
-                    <img src={Img1} alt="user_img" />
+                    <img src={Img3} alt="user_img" />
                     <span>
-                      <h4>Cristofer Jonson</h4>
+                      <h4>Ron Rizzly</h4>
                       <p>Novi Sad</p>
                     </span>
                   </div>

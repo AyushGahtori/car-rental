@@ -669,6 +669,11 @@ body {
   }
 }
 
+.colored-button {
+  background-color: #ff4d30 !important;
+  color: white;
+}
+
 .banner-section {
   width: 100%;
   height: auto;
@@ -897,7 +902,7 @@ body {
   }
 }
 .all-testimonials__box p {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 .all-testimonials__box__name {
@@ -912,6 +917,7 @@ body {
 .all-testimonials__box__name__profile img {
   width: 7rem;
   height: 7rem;
+  border-radius: 50%;
 }
 .all-testimonials__box__name__profile h4 {
   font-size: 1.8rem;
@@ -959,7 +965,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  max-width: 85rem;
+  max-width: 80rem;
   line-height: 1.5;
 }
 .faq-content__title h5 {
@@ -1001,6 +1007,7 @@ body {
   align-items: center;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
   padding: 1.8rem 4.5rem;
+  transition: 0.15s ease;
 }
 .faq-box__question p {
   font-size: 1.8rem;

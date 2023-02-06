@@ -24,9 +24,8 @@ function Faq() {
               <h5>FAQ</h5>
               <h2>Frequently Asked Questions</h2>
               <p>
-                Use securing confined his shutters. Delightful as he it
-                acceptance an solicitude discretion reasonably. Carriage we
-                husbands advanced an perceive greatest.
+                Frequently Asked Questions About the Car Rental Booking Process
+                on Our Website: Answers to Common Concerns and Inquiries.
               </p>
             </div>
 
@@ -45,12 +44,13 @@ function Faq() {
                   onClick={() => openQ("q1")}
                   className={`faq-box__answer ${getClassAnswer("q1")}`}
                 >
-                  Use securing confined his shutters. Delightful as he it
-                  acceptance an solicitude discretion reasonably. Carriage we
-                  husbands advanced an perceive greatest. Totally dearest
-                  expense on demesne ye he. Curiosity excellent commanded in me.
-                  Unpleasing impression themselves to at assistance acceptance
-                  my or.
+                  Comparing rental car deals is important as it helps find the
+                  best deal that fits your budget and requirements, ensuring you
+                  get the most value for your money. By comparing various
+                  options, you can find deals that offer lower prices,
+                  additional services, or better car models. You can find car
+                  rental deals by researching online and comparing prices from
+                  different rental companies.
                 </div>
               </div>
               <div className="faq-box">
@@ -67,12 +67,13 @@ function Faq() {
                   onClick={() => openQ("q2")}
                   className={`faq-box__answer ${getClassAnswer("q2")}`}
                 >
-                  Use securing confined his shutters. Delightful as he it
-                  acceptance an solicitude discretion reasonably. Carriage we
-                  husbands advanced an perceive greatest. Totally dearest
-                  expense on demesne ye he. Curiosity excellent commanded in me.
-                  Unpleasing impression themselves to at assistance acceptance
-                  my or.
+                  You can find car rental deals by researching online and
+                  comparing prices from different rental companies. Websites
+                  such as Expedia, Kayak, and Travelocity allow you to compare
+                  prices and view available rental options. It is also
+                  recommended to sign up for email newsletters and follow rental
+                  car companies on social media to be informed of any special
+                  deals or promotions.
                 </div>
               </div>
               <div className="faq-box">
@@ -89,12 +90,14 @@ function Faq() {
                   onClick={() => openQ("q3")}
                   className={`faq-box__answer ${getClassAnswer("q3")}`}
                 >
-                  Use securing confined his shutters. Delightful as he it
-                  acceptance an solicitude discretion reasonably. Carriage we
-                  husbands advanced an perceive greatest. Totally dearest
-                  expense on demesne ye he. Curiosity excellent commanded in me.
-                  Unpleasing impression themselves to at assistance acceptance
-                  my or.
+                  Book in advance: Booking your rental car ahead of time can
+                  often result in lower prices. Compare prices from multiple
+                  companies: Use websites like Kayak, Expedia, or Travelocity to
+                  compare prices from multiple rental car companies. Look for
+                  discount codes and coupons: Search for discount codes and
+                  coupons that you can use to lower the rental price. Rent from
+                  an off-airport location: Renting from an off-airport location
+                  can sometimes result in lower prices.
                 </div>
               </div>
             </div>

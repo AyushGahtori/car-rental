@@ -19,9 +19,12 @@ function ChooseUs() {
                 <h4>Why Choose Us</h4>
                 <h2>Best valued deals you will ever find</h2>
                 <p>
-                  Thrown shy denote ten ladies though ask saw. Or by to he going
-                  think order event music. Incommode so intention defective at
-                  convinced. Led income months itself and houses you.
+                  Discover the best deals you'll ever find with our unbeatable
+                  offers. We're dedicated to providing you with the best value
+                  for your money, so you can enjoy top-quality services and
+                  products without breaking the bank. Our deals are designed to
+                  give you the ultimate renting experience, so don't miss out on
+                  your chance to save big.
                 </p>
                 <a href="#home">
                   Find Details &nbsp;
@@ -34,8 +37,8 @@ function ChooseUs() {
                   <div className="text-container__right__box__text">
                     <h4>Cross Country Drive</h4>
                     <p>
-                      Speedily say has suitable disposal add boy. On forth doubt
-                      miles of child. Exercise joy man children rejoiced.
+                      Take your driving experience to the next level with our
+                      top-notch vehicles for your cross-country adventures.
                     </p>
                   </div>
                 </div>
@@ -45,8 +48,8 @@ function ChooseUs() {
                   <div className="text-container__right__box__text">
                     <h4>All Inclusive Pricing</h4>
                     <p>
-                      Speedily say has suitable disposal add boy. On forth doubt
-                      miles of child. Exercise joy man children rejoiced.
+                      Get everything you need in one convenient, transparent
+                      price with our all-inclusive pricing policy.
                     </p>
                   </div>
                 </div>
@@ -56,8 +59,8 @@ function ChooseUs() {
                   <div className="text-container__right__box__text">
                     <h4>No Hidden Charges</h4>
                     <p>
-                      Speedily say has suitable disposal add boy. On forth doubt
-                      miles of child. Exercise joy man children rejoiced.
+                      Enjoy peace of mind with our no hidden charges policy. We
+                      believe in transparent and honest pricing.
                     </p>
                   </div>
                 </div>
