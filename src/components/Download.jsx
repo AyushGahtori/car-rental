@@ -14,8 +14,8 @@ function Download() {
               convinced. Led income months itself and houses you.
             </p>
             <div className="download-text__btns">
-              <img src={Img2} />
-              <img src={Img1} />
+              <img alt="download_img" src={Img2} />
+              <img alt="download_img" src={Img1} />
             </div>
           </div>
         </div>

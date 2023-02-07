@@ -8,6 +8,7 @@ import ChooseUs from "./ChooseUs";
 import Testimonials from "./Testimonials";
 import Faq from "./Faq";
 import Download from "./Download";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
       <Testimonials />
       <Faq />
       <Download />
+      <Footer />
     </>
   );
 }
