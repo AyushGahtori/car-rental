@@ -430,7 +430,6 @@ body {
 }
 .book-content__box button {
   padding: 1.3rem 1.3rem;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   align-self: self-end;
@@ -448,8 +447,33 @@ body {
   box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
 }
 
-.modal-overlay {
+.error-msg {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1.3rem;
+  margin-top: -1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1.6rem;
+  font-weight: 500;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.error-msg i {
+  cursor: pointer;
+}
+
+.active-modal {
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.modal-overlay {
+  opacity: 0;
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -460,7 +484,8 @@ body {
 }
 
 .booking-modal {
-  display: flex;
+  opacity: 0;
+  display: none;
   flex-direction: column;
   position: fixed;
   overflow-x: hidden;
@@ -475,6 +500,16 @@ body {
   background-color: rgb(255, 255, 255);
   padding-right: 2px;
   color: #010103;
+}
+@media (max-width: 800px) {
+  .booking-modal {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .booking-modal {
+    top: 50%;
+  }
 }
 .booking-modal__title {
   display: flex;
@@ -525,6 +560,12 @@ body {
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid rgba(119, 119, 119, 0.6235294118);
 }
+@media (max-width: 650px) {
+  .booking-modal__car-info {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
 .booking-modal__car-info__dates {
   display: flex;
   flex-direction: column;
@@ -538,10 +579,22 @@ body {
   display: flex;
   gap: 1rem;
 }
+@media (max-width: 650px) {
+  .booking-modal__car-info__dates span {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+  }
+}
 .booking-modal__car-info__dates span i {
   font-size: 1.8rem;
   padding-top: 0.2rem;
   color: #777777;
+}
+@media (max-width: 650px) {
+  .booking-modal__car-info__dates span i {
+    display: none;
+  }
 }
 .booking-modal__car-info__dates span h6 {
   font-size: 1.5rem;
@@ -555,6 +608,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+@media (max-width: 650px) {
+  .booking-modal__car-info__model {
+    margin-top: 3.5rem;
+  }
 }
 .booking-modal__car-info__model h5 {
   font-size: 1.8rem;
@@ -602,6 +660,11 @@ body {
   gap: 2rem;
   padding: 1rem 0;
 }
+@media (max-width: 650px) {
+  .info-form__2col, .info-form__1col {
+    grid-template-columns: 1fr;
+  }
+}
 .info-form__2col span, .info-form__1col span {
   display: flex;
   flex-direction: column;
@@ -630,6 +693,11 @@ body {
   margin: 0 -3rem;
   padding: 3rem;
   text-align: right;
+}
+@media (max-width: 650px) {
+  .reserve-button {
+    text-align: center;
+  }
 }
 .reserve-button button {
   font-size: 2.4rem;
@@ -1002,7 +1070,6 @@ body {
   transition: all 0.3s;
   border: 2px solid #ff4d30;
   font-size: 1.6rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1432,7 +1499,6 @@ footer {
   transition: all 0.3s;
   border: 2px solid #ff4d30;
   font-size: 1.6rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;

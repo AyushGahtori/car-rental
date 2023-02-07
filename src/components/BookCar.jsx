@@ -1,11 +1,32 @@
+import { useEffect, useState } from "react";
 import CarImg from "../images/cars-big/audia1.jpg";
 
 function BookCar() {
+  const [modal, setModal] = useState(false); //  class - active-modal
+
+  const openModal = (e) => {
+    e.preventDefault();
+    setModal(!modal);
+    const modalDiv = document.querySelector(".booking-modal");
+    modalDiv.scroll(0, 0);
+  };
+
+  useEffect(() => {
+    if (modal === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [modal]);
+
   return (
     <>
       <section className="book-section">
         {/* overlay */}
-        <div className="modal-overlay"></div>
+        <div
+          onClick={openModal}
+          className={`modal-overlay ${modal ? "active-modal" : ""}`}
+        ></div>
 
         <div className="container">
           <div className="book-content">
@@ -70,7 +91,9 @@ function BookCar() {
                   <input type="date"></input>
                 </div>
 
-                <button type="submit">Search</button>
+                <button onClick={openModal} type="submit">
+                  Search
+                </button>
               </form>
             </div>
           </div>
@@ -78,11 +101,11 @@ function BookCar() {
       </section>
 
       {/* modal */}
-      <div className="booking-modal">
+      <div className={`booking-modal ${modal ? "active-modal" : ""}`}>
         {/* title */}
         <div className="booking-modal__title">
           <h2>Complete Reservation</h2>
-          <i className="fa-solid fa-xmark"></i>
+          <i onClick={openModal} className="fa-solid fa-xmark"></i>
         </div>
         {/* message */}
         <div className="booking-modal__message">
