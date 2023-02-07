@@ -67,7 +67,7 @@ function PickCar() {
                     btnID("btn4");
                   }}
                 >
-                  BMW 320 MedernLine
+                  BMW 320 ModernLine
                 </button>
                 <button
                   className={`${coloringButton("btn5")}`}

@@ -448,6 +448,209 @@ body {
   box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
 }
 
+.modal-overlay {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999999999;
+  top: 0;
+  right: 0;
+}
+
+.booking-modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 999999999999;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 83rem;
+  height: 100vh;
+  border: 2px solid white;
+  background-color: rgb(255, 255, 255);
+  padding-right: 2px;
+  color: #010103;
+}
+.booking-modal__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #ff4d30;
+  color: white;
+  align-items: center;
+}
+.booking-modal__title h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+.booking-modal__title i {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.919);
+  cursor: pointer;
+  transition: all 0.2;
+}
+.booking-modal__title i:hover {
+  color: white;
+}
+.booking-modal__message {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  background-color: #ffeae6;
+}
+.booking-modal__message h4 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ff4d30;
+}
+.booking-modal__message h4 i {
+  font-size: 2.5rem;
+}
+.booking-modal__message p {
+  font-size: 1.7rem;
+  color: #777777;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.booking-modal__car-info {
+  background-color: white;
+  padding: 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.6235294118);
+}
+.booking-modal__car-info__dates {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.booking-modal__car-info__dates h5 {
+  font-size: 1.8rem;
+  color: #ff4d30;
+}
+.booking-modal__car-info__dates span {
+  display: flex;
+  gap: 1rem;
+}
+.booking-modal__car-info__dates span i {
+  font-size: 1.8rem;
+  padding-top: 0.2rem;
+  color: #777777;
+}
+.booking-modal__car-info__dates span h6 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.booking-modal__car-info__dates span p {
+  font-size: 1.6rem;
+  color: #777777;
+}
+.booking-modal__car-info__model {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.booking-modal__car-info__model h5 {
+  font-size: 1.8rem;
+  color: #ff4d30;
+}
+.booking-modal__car-info__model img {
+  width: 100%;
+}
+.booking-modal__person-info {
+  padding: 3rem 3rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.booking-modal__person-info h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #ff4d30;
+  margin-bottom: 2rem;
+}
+
+.info-form {
+  display: flex;
+  flex-direction: column;
+}
+.info-form__checkbox {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #565454;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.info-form__checkbox input {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.info-form__1col {
+  grid-template-columns: 1fr !important;
+}
+.info-form__2col, .info-form__1col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.info-form__2col span, .info-form__1col span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.info-form__2col span label, .info-form__1col span label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #777777;
+}
+.info-form__2col span label b, .info-form__1col span label b {
+  color: #ff4d30;
+}
+.info-form__2col span input, .info-form__1col span input {
+  padding: 14px 15px;
+  background-color: #dbdbdb;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.reserve-button {
+  background-color: #dbdbdb;
+  margin: 0 -3rem;
+  padding: 3rem;
+  text-align: right;
+}
+.reserve-button button {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: 700;
+  background-color: #ff4d30;
+  border: 1px solid yellow;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.reserve-button button:hover {
+  background-color: #fe3516;
+}
+
+.dates-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
 .plan-section {
   background-color: #ffffff;
   padding: 5.3rem 0;
