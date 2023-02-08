@@ -81,7 +81,7 @@ function BookCar() {
 
   return (
     <>
-      <section className="book-section">
+      <section id="booking-section" className="book-section">
         {/* overlay */}
         <div
           onClick={openModal}
@@ -95,8 +95,8 @@ function BookCar() {
               <form className="box-form">
                 <div className="box-form__car-type">
                   <label>
-                    <i className="fa-solid fa-car"></i> &nbsp; Select Yout Car
-                    Type
+                    <i className="fa-solid fa-car"></i> &nbsp; Select Your Car
+                    Type <b>*</b>
                   </label>
                   <select value={carType} onChange={handleCar}>
                     <option>Select your car type</option>
@@ -113,7 +113,8 @@ function BookCar() {
 
                 <div className="box-form__car-type">
                   <label>
-                    <i className="fa-solid fa-location-dot"></i> &nbsp; Pick-up
+                    <i className="fa-solid fa-location-dot"></i> &nbsp; Pick-up{" "}
+                    <b>*</b>
                   </label>
                   <select value={pickUp} onChange={handlePick}>
                     <option>Select pick up location</option>
@@ -127,7 +128,8 @@ function BookCar() {
 
                 <div className="box-form__car-type">
                   <label>
-                    <i className="fa-solid fa-location-dot"></i> &nbsp; Drop-of
+                    <i className="fa-solid fa-location-dot"></i> &nbsp; Drop-of{" "}
+                    <b>*</b>
                   </label>
                   <select value={dropOff} onChange={handleDrop}>
                     <option>Select drop off location</option>
@@ -142,7 +144,7 @@ function BookCar() {
                 <div className="box-form__car-time">
                   <label>
                     <i className="fa-regular fa-calendar-days "></i> &nbsp;
-                    Pick-up
+                    Pick-up <b>*</b>
                   </label>
                   <input
                     value={pickTime}
@@ -154,7 +156,7 @@ function BookCar() {
                 <div className="box-form__car-time">
                   <label>
                     <i className="fa-regular fa-calendar-days "></i> &nbsp;
-                    Drop-of
+                    Drop-of <b>*</b>
                   </label>
                   <input
                     value={dropTime}
@@ -199,7 +201,10 @@ function BookCar() {
                 <i className="fa-solid fa-location-dot"></i>
                 <div>
                   <h6>Pick-Up Date & Time</h6>
-                  <p>{pickTime}</p>
+                  <p>
+                    {pickTime} /{" "}
+                    <input type="time" className="input-time"></input>
+                  </p>
                 </div>
               </span>
             </div>
@@ -209,7 +214,10 @@ function BookCar() {
                 <i className="fa-solid fa-location-dot"></i>
                 <div>
                   <h6>Drop-Off Date & Time</h6>
-                  <p>{dropTime}</p>
+                  <p>
+                    {dropTime} /{" "}
+                    <input type="time" className="input-time"></input>
+                  </p>
                 </div>
               </span>
             </div>
