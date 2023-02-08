@@ -8,6 +8,7 @@ import CarPassat from "../images/cars-big/passatcc.jpg";
 
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
+
   const [carType, setCarType] = useState("");
   const [pickUp, setPickUp] = useState("");
   const [dropOff, setDropOff] = useState("");
@@ -17,9 +18,21 @@ function BookCar() {
 
   const openModal = (e) => {
     e.preventDefault();
-    setModal(!modal);
-    const modalDiv = document.querySelector(".booking-modal");
-    modalDiv.scroll(0, 0);
+    const errorMsg = document.querySelector(".error-message");
+    if (
+      pickUp === "" ||
+      dropOff === "" ||
+      pickTime === "" ||
+      dropTime === "" ||
+      carType === ""
+    ) {
+      errorMsg.style.display = "flex";
+    } else {
+      setModal(!modal);
+      const modalDiv = document.querySelector(".booking-modal");
+      modalDiv.scroll(0, 0);
+      errorMsg.style.display = "none";
+    }
   };
 
   useEffect(() => {
@@ -91,7 +104,12 @@ function BookCar() {
         <div className="container">
           <div className="book-content">
             <div className="book-content__box">
-              <h3>Book a car</h3>
+              <h2>Book a car</h2>
+
+              <p className="error-message">
+                All fields required! <i className="fa-solid fa-xmark"></i>
+              </p>
+
               <form className="box-form">
                 <div className="box-form__car-type">
                   <label>
@@ -142,11 +160,12 @@ function BookCar() {
                 </div>
 
                 <div className="box-form__car-time">
-                  <label>
+                  <label htmlFor="picktime">
                     <i className="fa-regular fa-calendar-days "></i> &nbsp;
                     Pick-up <b>*</b>
                   </label>
                   <input
+                    id="picktime"
                     value={pickTime}
                     onChange={handlePickTime}
                     type="date"
@@ -154,11 +173,12 @@ function BookCar() {
                 </div>
 
                 <div className="box-form__car-time">
-                  <label>
+                  <label htmlFor="droptime">
                     <i className="fa-regular fa-calendar-days "></i> &nbsp;
                     Drop-of <b>*</b>
                   </label>
                   <input
+                    id="droptime"
                     value={dropTime}
                     onChange={handleDropTime}
                     type="date"
@@ -174,7 +194,8 @@ function BookCar() {
         </div>
       </section>
 
-      {/* modal */}
+      {/* modal ------------------------------------ */}
+
       <div className={`booking-modal ${modal ? "active-modal" : ""}`}>
         {/* title */}
         <div className="booking-modal__title">

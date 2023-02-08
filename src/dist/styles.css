@@ -80,7 +80,7 @@ body {
 }
 .navbar__img img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .navbar__links {
   display: flex;
@@ -359,7 +359,7 @@ body {
     padding: 4rem 2.5rem 5rem 2.5rem;
   }
 }
-.book-content__box h3 {
+.book-content__box h2 {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2.7rem;
@@ -450,22 +450,22 @@ body {
   box-shadow: 0 10px 15px rgba(255, 83, 48, 0.55);
 }
 
-.error-msg {
+.error-message {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
   padding: 1rem 1.4rem;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.8rem;
   margin-top: -1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   font-size: 1.6rem;
   font-weight: 500;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
-.error-msg i {
+.error-message i {
   cursor: pointer;
 }
 
@@ -626,6 +626,7 @@ body {
 }
 .booking-modal__car-info__model img {
   width: 100%;
+  height: auto;
 }
 .booking-modal__person-info {
   padding: 3rem 3rem;
