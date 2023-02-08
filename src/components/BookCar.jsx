@@ -9,6 +9,7 @@ import CarPassat from "../images/cars-big/passatcc.jpg";
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
 
+  // booking car
   const [carType, setCarType] = useState("");
   const [pickUp, setPickUp] = useState("");
   const [dropOff, setDropOff] = useState("");
@@ -16,6 +17,50 @@ function BookCar() {
   const [dropTime, setDropTime] = useState("");
   const [carImg, setCarImg] = useState("");
 
+  // modal infos
+  const [name, setName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [age, setAge] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [zipcode, setZipCode] = useState("");
+
+  // taking value of modal inputs
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleLastName = (e) => {
+    setLastName(e.target.value);
+  };
+
+  const handlePhone = (e) => {
+    setPhone(e.target.value);
+  };
+
+  const handleAge = (e) => {
+    setAge(e.target.value);
+  };
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleAddress = (e) => {
+    setAddress(e.target.value);
+  };
+
+  const handleCity = (e) => {
+    setCity(e.target.value);
+  };
+
+  const handleZip = (e) => {
+    setZipCode(e.target.value);
+  };
+
+  // open modal when all inputs are fulfilled
   const openModal = (e) => {
     e.preventDefault();
     const errorMsg = document.querySelector(".error-message");
@@ -35,6 +80,7 @@ function BookCar() {
     }
   };
 
+  // disable page scroll when modal is displayed
   useEffect(() => {
     if (modal === true) {
       document.body.style.overflow = "hidden";
@@ -43,10 +89,24 @@ function BookCar() {
     }
   }, [modal]);
 
+  // confirm modal booking
   const confirmBooking = (e) => {
     e.preventDefault();
+    setModal(!modal);
+    const doneMsg = document.querySelector(".booking-done");
+    doneMsg.style.display = "flex";
   };
 
+  // name !== "" &&
+  // lastName !== "" &&
+  // phone !== "" &&
+  // age !== "" &&
+  // email !== "" &&
+  // address !== "" &&
+  // city !== "" &&
+  // zipcode !== ""
+
+  // taking value of booking inputs
   const handleCar = (e) => {
     setCarType(e.target.value);
     setCarImg(e.target.value);
@@ -68,6 +128,7 @@ function BookCar() {
     setDropTime(e.target.value);
   };
 
+  // based on value name show car img
   let imgUrl;
   switch (carImg) {
     case "Audi A1 S-Line":
@@ -108,6 +169,11 @@ function BookCar() {
 
               <p className="error-message">
                 All fields required! <i className="fa-solid fa-xmark"></i>
+              </p>
+
+              <p className="booking-done">
+                Check your email to confirm an order.{" "}
+                <i className="fa-solid fa-xmark"></i>
               </p>
 
               <form className="box-form">
@@ -279,28 +345,52 @@ function BookCar() {
                 <label>
                   First Name <b>*</b>
                 </label>
-                <input type="text" placeholder="Enter your first name"></input>
+                <input
+                  value={name}
+                  onChange={handleName}
+                  type="text"
+                  placeholder="Enter your first name"
+                ></input>
+                <p className="error-modal">This field is required.</p>
               </span>
 
               <span>
                 <label>
                   Last Name <b>*</b>
                 </label>
-                <input type="text" placeholder="Enter your last name"></input>
+                <input
+                  value={lastName}
+                  onChange={handleLastName}
+                  type="text"
+                  placeholder="Enter your last name"
+                ></input>
+                <p className="error-modal ">This field is required.</p>
               </span>
 
               <span>
                 <label>
                   Phone Number <b>*</b>
                 </label>
-                <input type="tel" placeholder="Enter your phone number"></input>
+                <input
+                  value={phone}
+                  onChange={handlePhone}
+                  type="tel"
+                  placeholder="Enter your phone number"
+                ></input>
+                <p className="error-modal">This field is required.</p>
               </span>
 
               <span>
                 <label>
                   Age <b>*</b>
                 </label>
-                <input type="number" placeholder="18"></input>
+                <input
+                  value={age}
+                  onChange={handleAge}
+                  type="number"
+                  placeholder="18"
+                ></input>
+                <p className="error-modal ">This field is required.</p>
               </span>
             </div>
 
@@ -310,9 +400,12 @@ function BookCar() {
                   Email <b>*</b>
                 </label>
                 <input
+                  value={email}
+                  onChange={handleEmail}
                   type="email"
                   placeholder="Enter your email address"
                 ></input>
+                <p className="error-modal">This field is required.</p>
               </span>
 
               <span>
@@ -320,9 +413,12 @@ function BookCar() {
                   Address <b>*</b>
                 </label>
                 <input
+                  value={address}
+                  onChange={handleAddress}
                   type="text"
                   placeholder="Enter your street address"
                 ></input>
+                <p className="error-modal ">This field is required.</p>
               </span>
             </div>
 
@@ -331,14 +427,26 @@ function BookCar() {
                 <label>
                   City <b>*</b>
                 </label>
-                <input type="text" placeholder="Enter your city"></input>
+                <input
+                  value={city}
+                  onChange={handleCity}
+                  type="text"
+                  placeholder="Enter your city"
+                ></input>
+                <p className="error-modal">This field is required.</p>
               </span>
 
               <span>
                 <label>
                   Zip Code <b>*</b>
                 </label>
-                <input type="text" placeholder="Enter your zip code"></input>
+                <input
+                  value={zipcode}
+                  onChange={handleZip}
+                  type="text"
+                  placeholder="Enter your zip code"
+                ></input>
+                <p className="error-modal ">This field is required.</p>
               </span>
             </div>
 
