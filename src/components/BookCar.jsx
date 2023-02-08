@@ -1,8 +1,19 @@
 import { useEffect, useState } from "react";
-import CarImg from "../images/cars-big/audia1.jpg";
+import CarAudi from "../images/cars-big/audia1.jpg";
+import CarGolf from "../images/cars-big/golf6.jpg";
+import CarToyota from "../images/cars-big/toyotacamry.jpg";
+import CarBmw from "../images/cars-big/bmw320.jpg";
+import CarMercedes from "../images/cars-big/benz.jpg";
+import CarPassat from "../images/cars-big/passatcc.jpg";
 
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
+  const [carType, setCarType] = useState("");
+  const [pickUp, setPickUp] = useState("");
+  const [dropOff, setDropOff] = useState("");
+  const [pickTime, setPickTime] = useState("");
+  const [dropTime, setDropTime] = useState("");
+  const [carImg, setCarImg] = useState("");
 
   const openModal = (e) => {
     e.preventDefault();
@@ -18,6 +29,55 @@ function BookCar() {
       document.body.style.overflow = "auto";
     }
   }, [modal]);
+
+  const confirmBooking = (e) => {
+    e.preventDefault();
+  };
+
+  const handleCar = (e) => {
+    setCarType(e.target.value);
+    setCarImg(e.target.value);
+  };
+
+  const handlePick = (e) => {
+    setPickUp(e.target.value);
+  };
+
+  const handleDrop = (e) => {
+    setDropOff(e.target.value);
+  };
+
+  const handlePickTime = (e) => {
+    setPickTime(e.target.value);
+  };
+
+  const handleDropTime = (e) => {
+    setDropTime(e.target.value);
+  };
+
+  let imgUrl;
+  switch (carImg) {
+    case "Audi A1 S-Line":
+      imgUrl = CarAudi;
+      break;
+    case "VW Golf 6":
+      imgUrl = CarGolf;
+      break;
+    case "Toyota Camry":
+      imgUrl = CarToyota;
+      break;
+    case "BMW 320 ModernLine":
+      imgUrl = CarBmw;
+      break;
+    case "Mercedes-Benz GLK":
+      imgUrl = CarMercedes;
+      break;
+    case "VW Passat CC":
+      imgUrl = CarPassat;
+      break;
+    default:
+      imgUrl = "";
+  }
 
   return (
     <>
@@ -38,14 +98,16 @@ function BookCar() {
                     <i className="fa-solid fa-car"></i> &nbsp; Select Yout Car
                     Type
                   </label>
-                  <select>
+                  <select value={carType} onChange={handleCar}>
                     <option>Select your car type</option>
-                    <option>Audi A1 S-Line</option>
-                    <option>VW Golf 6</option>
-                    <option>Toyota Camry</option>
-                    <option>BMW 320 ModernLine</option>
-                    <option>Mercedes-Benz GLK</option>
-                    <option>VW Passat CC</option>
+                    <option value="Audi A1 S-Line">Audi A1 S-Line</option>
+                    <option value="VW Golf 6">VW Golf 6</option>
+                    <option value="Toyota Camry">Toyota Camry</option>
+                    <option value="BMW 320 ModernLine">
+                      BMW 320 ModernLine
+                    </option>
+                    <option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
+                    <option value="VW Passat CC">VW Passat CC</option>
                   </select>
                 </div>
 
@@ -53,7 +115,8 @@ function BookCar() {
                   <label>
                     <i className="fa-solid fa-location-dot"></i> &nbsp; Pick-up
                   </label>
-                  <select>
+                  <select value={pickUp} onChange={handlePick}>
+                    <option>Select pick up location</option>
                     <option>Belgrade</option>
                     <option>Novi Sad</option>
                     <option>Nis</option>
@@ -66,7 +129,8 @@ function BookCar() {
                   <label>
                     <i className="fa-solid fa-location-dot"></i> &nbsp; Drop-of
                   </label>
-                  <select>
+                  <select value={dropOff} onChange={handleDrop}>
+                    <option>Select drop off location</option>
                     <option>Novi Sad</option>
                     <option>Belgrade</option>
                     <option>Nis</option>
@@ -80,7 +144,11 @@ function BookCar() {
                     <i className="fa-regular fa-calendar-days "></i> &nbsp;
                     Pick-up
                   </label>
-                  <input type="date"></input>
+                  <input
+                    value={pickTime}
+                    onChange={handlePickTime}
+                    type="date"
+                  ></input>
                 </div>
 
                 <div className="box-form__car-time">
@@ -88,7 +156,11 @@ function BookCar() {
                     <i className="fa-regular fa-calendar-days "></i> &nbsp;
                     Drop-of
                   </label>
-                  <input type="date"></input>
+                  <input
+                    value={dropTime}
+                    onChange={handleDropTime}
+                    type="date"
+                  ></input>
                 </div>
 
                 <button onClick={openModal} type="submit">
@@ -126,8 +198,8 @@ function BookCar() {
               <span>
                 <i className="fa-solid fa-location-dot"></i>
                 <div>
-                  <h6>Pick-Up Time</h6>
-                  <p>25/02/2023 - 12:00 AM</p>
+                  <h6>Pick-Up Date & Time</h6>
+                  <p>{pickTime}</p>
                 </div>
               </span>
             </div>
@@ -136,8 +208,8 @@ function BookCar() {
               <span>
                 <i className="fa-solid fa-location-dot"></i>
                 <div>
-                  <h6>Drop-Off Time</h6>
-                  <p>1/03/2023 - 12:00 AM</p>
+                  <h6>Drop-Off Date & Time</h6>
+                  <p>{dropTime}</p>
                 </div>
               </span>
             </div>
@@ -147,7 +219,7 @@ function BookCar() {
                 <i className="fa-solid fa-calendar-days"></i>
                 <div>
                   <h6>Pick-Up Location</h6>
-                  <p>Belgrade - 23 Mihaila Pupina</p>
+                  <p>{pickUp}</p>
                 </div>
               </span>
             </div>
@@ -157,14 +229,16 @@ function BookCar() {
                 <i className="fa-solid fa-calendar-days"></i>
                 <div>
                   <h6>Drop-Off Location</h6>
-                  <p>Belgrade - 23 Mihaila Pupina</p>
+                  <p>{dropOff}</p>
                 </div>
               </span>
             </div>
           </div>
           <div className="booking-modal__car-info__model">
-            <h5>Car - Audi A1 S-Line</h5>
-            <img src={CarImg} alt="car_img" />
+            <h5>
+              <span>Car -</span> {carType}
+            </h5>
+            {imgUrl && <img src={imgUrl} alt="car_img" />}
           </div>
         </div>
         {/* personal info */}
@@ -245,7 +319,7 @@ function BookCar() {
             </span>
 
             <div className="reserve-button">
-              <button>Reserve Now</button>
+              <button onClick={confirmBooking}>Reserve Now</button>
             </div>
           </form>
         </div>

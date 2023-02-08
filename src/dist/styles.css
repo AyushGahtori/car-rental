@@ -618,6 +618,9 @@ body {
   font-size: 1.8rem;
   color: #ff4d30;
 }
+.booking-modal__car-info__model h5 span {
+  color: #010103;
+}
 .booking-modal__car-info__model img {
   width: 100%;
 }
