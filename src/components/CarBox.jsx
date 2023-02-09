@@ -1,11 +1,20 @@
+import { useState } from "react";
+
 function CarBox({ data, carID }) {
+  const [carLoad, setCarLoad] = useState(true);
   return (
     <>
       {data[carID].map((car, id) => (
         <div key={id} className="box-cars">
           {/* car */}
           <div className="pick-car">
-            <img src={car.img} alt="car_img" />
+            {carLoad && <span className="loader"></span>}
+            <img
+              style={{ display: carLoad ? "none" : "block" }}
+              src={car.img}
+              alt="car_img"
+              onLoad={() => setCarLoad(false)}
+            />
           </div>
           {/* description */}
           <div className="pick-description">
