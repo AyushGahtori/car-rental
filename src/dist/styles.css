@@ -86,22 +86,23 @@ body {
   display: flex;
   list-style: none;
   gap: 2.1rem;
+}
+.navbar__links a {
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   color: #010103;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar__links a:hover {
+  color: #ff4d30;
 }
 @media (max-width: 1000px) {
   .navbar__links {
     display: none;
   }
-}
-.navbar__links li {
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.navbar__links li:hover {
-  color: #ff4d30;
 }
 .navbar__buttons {
   display: flex;
@@ -1540,4 +1541,206 @@ footer {
 .submit-email:hover {
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.4);
   background-color: #fa4226;
+}
+
+.hero-pages {
+  width: 100%;
+  height: 41rem;
+  background-image: url("/src/images/hero/heroes-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-pages__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+.hero-pages__text {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  height: 41rem;
+  justify-content: center;
+  color: #010103;
+}
+.hero-pages__text h3 {
+  font-size: 3.6rem;
+  margin-bottom: 0.5rem;
+}
+.hero-pages__text p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.hero-pages__text p a {
+  color: #010103;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.hero-pages__text p a:hover {
+  color: #ff4d30;
+}
+
+.about-main {
+  margin: 10rem auto;
+  display: flex;
+  gap: 5rem;
+  max-width: 90rem;
+}
+@media (max-width: 960px) {
+  .about-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    max-width: 49rem;
+  }
+}
+@media (max-width: 520px) {
+  .about-main {
+    max-width: 100%;
+  }
+}
+.about-main__img {
+  width: 43rem;
+  height: 43rem;
+}
+@media (max-width: 960px) {
+  .about-main__img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 520px) {
+  .about-main__img {
+    width: 100%;
+    height: auto;
+  }
+}
+.about-main__text {
+  color: #010103;
+  display: flex;
+  flex-direction: column;
+}
+.about-main__text h3 {
+  font-size: 2.2rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.about-main__text h2 {
+  font-size: 4.2rem;
+  line-height: 1.2;
+}
+.about-main__text p {
+  font-size: 1.6rem;
+  color: #706f7b;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.about-main__text__icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+@media (max-width: 520px) {
+  .about-main__text__icons {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 0;
+  }
+  .about-main__text__icons p {
+    margin-top: 0;
+  }
+}
+.about-main__text__icons__box {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 520px) {
+  .about-main__text__icons__box {
+    align-items: center;
+  }
+}
+.about-main__text__icons__box .last-fk {
+  width: 5rem;
+}
+.about-main__text__icons__box img {
+  width: 7rem;
+}
+.about-main__text__icons__box span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 520px) {
+  .about-main__text__icons__box span {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+.about-main__text__icons__box span h4 {
+  font-size: 4.6rem;
+}
+
+.book-banner {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  background-image: url("/src/images/banners/book-banner.png");
+  position: relative;
+  margin-top: 7rem;
+}
+@media (max-width: 750px) {
+  .book-banner {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem 0;
+  }
+}
+.book-banner__overlay {
+  background-color: #2d2d2d;
+  opacity: 0.89;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.text-content {
+  color: white;
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+@media (max-width: 750px) {
+  .text-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+.text-content h2 {
+  font-size: 3.2rem;
+}
+.text-content span {
+  display: flex;
+  font-size: 2.7rem;
+  gap: 1rem;
+  align-items: center;
+  color: #ff4d30;
+  white-space: nowrap;
 }/*# sourceMappingURL=styles.css.map */

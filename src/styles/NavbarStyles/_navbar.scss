@@ -28,22 +28,23 @@
     display: flex;
     list-style: none;
     gap: 2.1rem;
-    font-size: $p-size;
-    font-family: $text-font;
-    font-weight: 500;
-    color: $text-black;
 
-    @media (max-width: 1000px) {
-      display: none;
-    }
-
-    li {
+    a {
+      font-size: $p-size;
+      font-family: $text-font;
+      font-weight: 500;
+      color: $text-black;
+      text-decoration: none;
       cursor: pointer;
       transition: all 0.3s;
 
       &:hover {
         color: $text-orange;
       }
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
     }
   }
 

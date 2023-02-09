@@ -97,15 +97,6 @@ function BookCar() {
     doneMsg.style.display = "flex";
   };
 
-  // name !== "" &&
-  // lastName !== "" &&
-  // phone !== "" &&
-  // age !== "" &&
-  // email !== "" &&
-  // address !== "" &&
-  // city !== "" &&
-  // zipcode !== ""
-
   // taking value of booking inputs
   const handleCar = (e) => {
     setCarType(e.target.value);
@@ -153,6 +144,12 @@ function BookCar() {
       imgUrl = "";
   }
 
+  // hide message
+  const hideMessage = () => {
+    const doneMsg = document.querySelector(".booking-done");
+    doneMsg.style.display = "none";
+  };
+
   return (
     <>
       <section id="booking-section" className="book-section">
@@ -173,7 +170,7 @@ function BookCar() {
 
               <p className="booking-done">
                 Check your email to confirm an order.{" "}
-                <i className="fa-solid fa-xmark"></i>
+                <i onClick={hideMessage} className="fa-solid fa-xmark"></i>
               </p>
 
               <form className="box-form">
