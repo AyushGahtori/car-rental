@@ -57,6 +57,7 @@
   display: flex;
   gap: 5rem;
   max-width: 90rem;
+  align-items: center;
 
   @media (max-width: 960px) {
     display: grid;
