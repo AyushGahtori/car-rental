@@ -328,6 +328,29 @@ body {
   }
 }
 
+.scroll-up {
+  position: fixed;
+  font-size: 2.5rem;
+  color: white;
+  background-color: #ff4d30;
+  border: 3px solid white;
+  width: 2rem;
+  height: 2rem;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.show-scroll {
+  display: flex;
+}
+
 .book-section {
   position: relative;
   background: linear-gradient(to bottom, #f8f8f8 20%, #ffffff 80%);
