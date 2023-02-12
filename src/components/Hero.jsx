@@ -10,6 +10,12 @@ function Hero() {
     window.scrollTo({ top: (0, 0), behavior: "smooth" });
   };
 
+  const bookBtn = () => {
+    document
+      .querySelector("#booking-section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
+
   useEffect(() => {
     const onPageScroll = () => {
       if (window.pageYOffset > 600) {
@@ -40,7 +46,11 @@ function Hero() {
                 flexible pick-up options and much more.
               </p>
               <div className="hero-content__text__btns">
-                <Link className="hero-content__text__btns__book-ride" to="/">
+                <Link
+                  onClick={bookBtn}
+                  className="hero-content__text__btns__book-ride"
+                  to="/"
+                >
                   Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
                 </Link>
                 <Link className="hero-content__text__btns__learn-more" to="/">
