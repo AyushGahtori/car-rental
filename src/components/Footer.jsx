@@ -17,6 +17,7 @@ function Footer() {
                   <i className="fa-solid fa-phone"></i> &nbsp; (123) -456-789
                 </a>
               </li>
+
               <li>
                 <a
                   href="mailto: 
@@ -24,6 +25,17 @@ function Footer() {
                 >
                   <i className="fa-solid fa-envelope"></i>
                   &nbsp; carrental@gmail.com
+                </a>
+              </li>
+
+              <li>
+                <a
+                  style={{ fontSize: "14px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://xpeedstudio.com/"
+                >
+                  Design by XpeedStudio
                 </a>
               </li>
             </ul>
