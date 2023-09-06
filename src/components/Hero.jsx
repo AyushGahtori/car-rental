@@ -2,11 +2,7 @@ import { Link } from "react-router-dom";
 import BgShape from "../images/hero/hero-bg.png";
 import HeroCar from "../images/hero/main-car.png";
 import { useEffect, useState } from "react";
-import {
-  IconChevronRight,
-  IconChevronUp,
-  IconCircleCheck,
-} from "@tabler/icons-react";
+import { IconChevronRight, IconCircleCheck } from "@tabler/icons-react";
 
 function Hero() {
   const [goUp, setGoUp] = useState(false);
