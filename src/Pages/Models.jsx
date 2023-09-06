@@ -7,6 +7,7 @@ import CarImg4 from "../images/cars-big/bmw-box.png";
 import CarImg5 from "../images/cars-big/benz-box.png";
 import CarImg6 from "../images/cars-big/passat-box.png";
 import { Link } from "react-router-dom";
+import { IconCar, IconPhone, IconStar } from "@tabler/icons-react";
 
 function Models() {
   return (
@@ -23,11 +24,11 @@ function Models() {
                     <div className="models-div__box__descr__name-price__name">
                       <p>Audi A1</p>
                       <span>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
@@ -37,16 +38,16 @@ function Models() {
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Audi
+                      <IconCar /> &nbsp; Audi
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <i className="fa-solid fa-car-side"></i>
+                      4/5 &nbsp; <IconCar />
                     </span>
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Manual
+                      <IconCar /> &nbsp; Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <i className="fa-solid fa-car-side"></i>
+                      Diesel &nbsp; <IconCar />
                     </span>
                   </div>
                   <div className="models-div__box__descr__name-price__btn">
@@ -66,11 +67,11 @@ function Models() {
                     <div className="models-div__box__descr__name-price__name">
                       <p>Golf 6</p>
                       <span>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
@@ -80,16 +81,16 @@ function Models() {
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; VW
+                      <IconCar /> &nbsp; VW
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <i className="fa-solid fa-car-side"></i>
+                      4/5 &nbsp; <IconCar />
                     </span>
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Manual
+                      <IconCar /> &nbsp; Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <i className="fa-solid fa-car-side"></i>
+                      Diesel &nbsp; <IconCar />
                     </span>
                   </div>
                   <div className="models-div__box__descr__name-price__btn">
@@ -109,11 +110,11 @@ function Models() {
                     <div className="models-div__box__descr__name-price__name">
                       <p>Toyota</p>
                       <span>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
@@ -123,16 +124,16 @@ function Models() {
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Camry
+                      <IconCar /> &nbsp; Camry
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <i className="fa-solid fa-car-side"></i>
+                      4/5 &nbsp; <IconCar />
                     </span>
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Manual
+                      <IconCar /> &nbsp; Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <i className="fa-solid fa-car-side"></i>
+                      Diesel &nbsp; <IconCar />
                     </span>
                   </div>
                   <div className="models-div__box__descr__name-price__btn">
@@ -152,11 +153,11 @@ function Models() {
                     <div className="models-div__box__descr__name-price__name">
                       <p>BMW 320</p>
                       <span>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
@@ -166,16 +167,16 @@ function Models() {
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; ModernLine
+                      <IconCar /> &nbsp; ModernLine
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <i className="fa-solid fa-car-side"></i>
+                      4/5 &nbsp; <IconCar />
                     </span>
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Manual
+                      <IconCar /> &nbsp; Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <i className="fa-solid fa-car-side"></i>
+                      Diesel &nbsp; <IconCar />
                     </span>
                   </div>
                   <div className="models-div__box__descr__name-price__btn">
@@ -195,11 +196,11 @@ function Models() {
                     <div className="models-div__box__descr__name-price__name">
                       <p>Mercedes</p>
                       <span>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
@@ -209,16 +210,16 @@ function Models() {
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Benz GLK
+                      <IconCar /> &nbsp; Benz GLK
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <i className="fa-solid fa-car-side"></i>
+                      4/5 &nbsp; <IconCar />
                     </span>
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Manual
+                      <IconCar /> &nbsp; Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <i className="fa-solid fa-car-side"></i>
+                      Diesel &nbsp; <IconCar />
                     </span>
                   </div>
                   <div className="models-div__box__descr__name-price__btn">
@@ -238,11 +239,11 @@ function Models() {
                     <div className="models-div__box__descr__name-price__name">
                       <p>VW Passat</p>
                       <span>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
+                        <IconStar width={15} height={15} />
                       </span>
                     </div>
                     <div className="models-div__box__descr__name-price__price">
@@ -252,16 +253,16 @@ function Models() {
                   </div>
                   <div className="models-div__box__descr__name-price__details">
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; CC
+                      <IconCar /> &nbsp; CC
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      4/5 &nbsp; <i className="fa-solid fa-car-side"></i>
+                      4/5 &nbsp; <IconCar />
                     </span>
                     <span>
-                      <i className="fa-solid fa-car-side"></i> &nbsp; Manual
+                      <IconCar /> &nbsp; Manual
                     </span>
                     <span style={{ textAlign: "right" }}>
-                      Diesel &nbsp; <i className="fa-solid fa-car-side"></i>
+                      Diesel &nbsp; <IconCar />
                     </span>
                   </div>
                   <div className="models-div__box__descr__name-price__btn">
@@ -280,7 +281,7 @@ function Models() {
             <div className="text-content">
               <h2>Book a car by getting in touch with us</h2>
               <span>
-                <i className="fa-solid fa-phone"></i>
+                <IconPhone width={40} height={40} />
                 <h3>(123) 456-7869</h3>
               </span>
             </div>

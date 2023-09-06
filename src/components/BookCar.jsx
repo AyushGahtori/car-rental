@@ -5,6 +5,9 @@ import CarToyota from "../images/cars-big/toyotacamry.jpg";
 import CarBmw from "../images/cars-big/bmw320.jpg";
 import CarMercedes from "../images/cars-big/benz.jpg";
 import CarPassat from "../images/cars-big/passatcc.jpg";
+import { IconCar, IconInfoCircleFilled, IconX } from "@tabler/icons-react";
+import { IconMapPinFilled } from "@tabler/icons-react";
+import { IconCalendarEvent } from "@tabler/icons-react";
 
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
@@ -165,18 +168,18 @@ function BookCar() {
               <h2>Book a car</h2>
 
               <p className="error-message">
-                All fields required! <i className="fa-solid fa-xmark"></i>
+                All fields required! <IconX width={20} height={20} />
               </p>
 
               <p className="booking-done">
                 Check your email to confirm an order.{" "}
-                <i onClick={hideMessage} className="fa-solid fa-xmark"></i>
+                <IconX width={20} height={20} onClick={hideMessage} />
               </p>
 
               <form className="box-form">
                 <div className="box-form__car-type">
                   <label>
-                    <i className="fa-solid fa-car"></i> &nbsp; Select Your Car
+                    <IconCar className="input-icon" /> &nbsp; Select Your Car
                     Type <b>*</b>
                   </label>
                   <select value={carType} onChange={handleCar}>
@@ -194,7 +197,7 @@ function BookCar() {
 
                 <div className="box-form__car-type">
                   <label>
-                    <i className="fa-solid fa-location-dot"></i> &nbsp; Pick-up{" "}
+                    <IconMapPinFilled className="input-icon" /> &nbsp; Pick-up{" "}
                     <b>*</b>
                   </label>
                   <select value={pickUp} onChange={handlePick}>
@@ -209,7 +212,7 @@ function BookCar() {
 
                 <div className="box-form__car-type">
                   <label>
-                    <i className="fa-solid fa-location-dot"></i> &nbsp; Drop-of{" "}
+                    <IconMapPinFilled className="input-icon" /> &nbsp; Drop-of{" "}
                     <b>*</b>
                   </label>
                   <select value={dropOff} onChange={handleDrop}>
@@ -224,8 +227,8 @@ function BookCar() {
 
                 <div className="box-form__car-time">
                   <label htmlFor="picktime">
-                    <i className="fa-regular fa-calendar-days "></i> &nbsp;
-                    Pick-up <b>*</b>
+                    <IconCalendarEvent className="input-icon" /> &nbsp; Pick-up{" "}
+                    <b>*</b>
                   </label>
                   <input
                     id="picktime"
@@ -237,8 +240,8 @@ function BookCar() {
 
                 <div className="box-form__car-time">
                   <label htmlFor="droptime">
-                    <i className="fa-regular fa-calendar-days "></i> &nbsp;
-                    Drop-of <b>*</b>
+                    <IconCalendarEvent className="input-icon" /> &nbsp; Drop-of{" "}
+                    <b>*</b>
                   </label>
                   <input
                     id="droptime"
@@ -263,13 +266,13 @@ function BookCar() {
         {/* title */}
         <div className="booking-modal__title">
           <h2>Complete Reservation</h2>
-          <i onClick={openModal} className="fa-solid fa-xmark"></i>
+          <IconX onClick={openModal} />
         </div>
         {/* message */}
         <div className="booking-modal__message">
           <h4>
-            <i className="fa-solid fa-circle-info"></i> Upon completing this
-            reservation enquiry, you will receive:
+            <IconInfoCircleFilled /> Upon completing this reservation enquiry,
+            you will receive:
           </h4>
           <p>
             Your rental voucher to produce on arrival at the rental desk and a
@@ -282,7 +285,7 @@ function BookCar() {
             <div className="booking-modal__car-info__dates">
               <h5>Location & Date</h5>
               <span>
-                <i className="fa-solid fa-location-dot"></i>
+                <IconMapPinFilled />
                 <div>
                   <h6>Pick-Up Date & Time</h6>
                   <p>
@@ -295,7 +298,7 @@ function BookCar() {
 
             <div className="booking-modal__car-info__dates">
               <span>
-                <i className="fa-solid fa-location-dot"></i>
+                <IconMapPinFilled />
                 <div>
                   <h6>Drop-Off Date & Time</h6>
                   <p>
@@ -308,7 +311,7 @@ function BookCar() {
 
             <div className="booking-modal__car-info__dates">
               <span>
-                <i className="fa-solid fa-calendar-days"></i>
+                <IconMapPinFilled />
                 <div>
                   <h6>Pick-Up Location</h6>
                   <p>{pickUp}</p>
@@ -318,7 +321,7 @@ function BookCar() {
 
             <div className="booking-modal__car-info__dates">
               <span>
-                <i className="fa-solid fa-calendar-days"></i>
+                <IconMapPinFilled />
                 <div>
                   <h6>Drop-Off Location</h6>
                   <p>{dropOff}</p>

@@ -1,5 +1,7 @@
+import { IconMail, IconMailOpened, IconPhone } from "@tabler/icons-react";
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
+import { IconLocation } from "@tabler/icons-react";
 
 function Contact() {
   return (
@@ -16,15 +18,14 @@ function Contact() {
                 years of experience.
               </p>
               <a href="/">
-                <i className="fa-solid fa-phone"></i>&nbsp; (123) 456-7869
+                <IconPhone /> &nbsp; (123) 456-7869
               </a>
               <a href="/">
-                <i className="fa-solid fa-envelope"></i>&nbsp;
-                carrental@carmail.com
+                <IconMail /> &nbsp; carrental@carmail.com
               </a>
               <a href="/">
-                <i className="fa-solid fa-location-dot"></i>&nbsp; Belgrade,
-                Serbia
+                <IconLocation />
+                &nbsp; Belgrade, Serbia
               </a>
             </div>
             <div className="contact-div__form">
@@ -45,8 +46,8 @@ function Contact() {
                 <textarea placeholder="Write Here.."></textarea>
 
                 <button type="submit">
-                  <i className="fa-solid fa-envelope-open-text"></i>&nbsp; Send
-                  Message
+                  <IconMailOpened />
+                  &nbsp; Send Message
                 </button>
               </form>
             </div>
@@ -58,7 +59,7 @@ function Contact() {
             <div className="text-content">
               <h2>Book a car by getting in touch with us</h2>
               <span>
-                <i className="fa-solid fa-phone"></i>
+                <IconPhone width={40} height={40} />
                 <h3>(123) 456-7869</h3>
               </span>
             </div>

@@ -1,3 +1,4 @@
+import { IconQuote } from "@tabler/icons-react";
 import Img2 from "../images/testimonials/pfp1.jpg";
 import Img3 from "../images/testimonials/pfp2.jpg";
 
@@ -21,7 +22,7 @@ function Testimonials() {
             <div className="all-testimonials">
               <div className="all-testimonials__box">
                 <span className="quotes-icon">
-                  <i className="fa-solid fa-quote-right"></i>
+                  <IconQuote width={60} height={60} />
                 </span>
                 <p>
                   "We rented a car from this website and had an amazing
@@ -41,7 +42,7 @@ function Testimonials() {
 
               <div className="all-testimonials__box box-2">
                 <span className="quotes-icon">
-                  <i className="fa-solid fa-quote-right"></i>
+                  <IconQuote width={60} height={60} />
                 </span>
                 <p>
                   "The car was in great condition and made our trip even better.

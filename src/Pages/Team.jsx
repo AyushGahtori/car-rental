@@ -1,3 +1,4 @@
+import { IconPhone } from "@tabler/icons-react";
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
 import Person1 from "../images/team/1.png";
@@ -41,7 +42,7 @@ function Team() {
             <div className="text-content">
               <h2>Book a car by getting in touch with us</h2>
               <span>
-                <i className="fa-solid fa-phone"></i>
+                <IconPhone width={40} height={40} />
                 <h3>(123) 456-7869</h3>
               </span>
             </div>

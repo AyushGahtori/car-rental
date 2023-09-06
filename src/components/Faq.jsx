@@ -1,3 +1,4 @@
+import { IconChevronDown } from "@tabler/icons-react";
 import { useState } from "react";
 
 function Faq() {
@@ -37,7 +38,7 @@ function Faq() {
                   className={`faq-box__question  ${getClassQuestion("q1")}`}
                 >
                   <p>1. What is special about comparing rental car deals?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <IconChevronDown />
                 </div>
                 <div
                   id="q1"
@@ -60,7 +61,7 @@ function Faq() {
                   className={`faq-box__question ${getClassQuestion("q2")}`}
                 >
                   <p>2. How do I find the car rental deals?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <IconChevronDown />{" "}
                 </div>
                 <div
                   id="q2"
@@ -83,7 +84,7 @@ function Faq() {
                   className={`faq-box__question ${getClassQuestion("q3")}`}
                 >
                   <p>3. How do I find such low rental car prices?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <IconChevronDown />
                 </div>
                 <div
                   id="q3"

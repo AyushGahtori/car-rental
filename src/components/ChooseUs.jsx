@@ -2,6 +2,7 @@ import MainImg from "../images/chooseUs/main.png";
 import Box1 from "../images/chooseUs/icon1.png";
 import Box2 from "../images/chooseUs/icon2.png";
 import Box3 from "../images/chooseUs/icon3.png";
+import { IconChevronRight } from "@tabler/icons-react";
 
 function ChooseUs() {
   return (
@@ -28,7 +29,7 @@ function ChooseUs() {
                 </p>
                 <a href="#home">
                   Find Details &nbsp;
-                  <i className="fa-solid fa-angle-right"></i>
+                  <IconChevronRight />
                 </a>
               </div>
               <div className="text-container__right">

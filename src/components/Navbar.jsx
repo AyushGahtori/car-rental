@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../images/logo/logo.png";
 import { useState } from "react";
+import { IconMenu2, IconX } from "@tabler/icons-react";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -15,7 +16,7 @@ function Navbar() {
         {/* mobile */}
         <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
           <div onClick={openNav} className="mobile-navbar__close">
-            <i className="fa-solid fa-xmark"></i>
+            <IconX width={30} height={30} />
           </div>
           <ul className="mobile-navbar__links">
             <li>
@@ -107,7 +108,7 @@ function Navbar() {
 
           {/* mobile */}
           <div className="mobile-hamb" onClick={openNav}>
-            <i className="fa-solid fa-bars"></i>
+            <IconMenu2 width={30} height={30} />
           </div>
         </div>
       </nav>
